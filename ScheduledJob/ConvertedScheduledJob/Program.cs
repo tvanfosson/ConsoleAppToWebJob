@@ -1,12 +1,23 @@
-﻿namespace ConvertedScheduledJob
+﻿using System.Linq;
+using Microsoft.Azure.WebJobs;
+
+namespace ConvertedScheduledJob
 {
     internal class Program
     {
         public static void Main(string[] args)
         {
-            var task = new OfflineTask(new NotificationService(), new WorkDataSource());
+            var config = new JobHostConfiguration();
 
-            task.DoTask();
+            var host = new JobHost(config);
+
+            var tasks = typeof(Functions).GetMethods()
+                                         .Where(m => m.GetCustomAttributes(typeof(NoAutomaticTriggerAttribute), false)
+                                                      .Any());
+            foreach (var method in tasks)
+            {
+                host.Call(method);
+            }
         }
     }
 }

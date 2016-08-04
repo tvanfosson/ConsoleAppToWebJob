@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScheduledJob", "ScheduledJo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebJob.Host", "WebJob.Host\WebJob.Host.csproj", "{3538E51A-080C-4B21-88F0-1F072CE50A80}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertedScheduledJob", "ConvertedScheduledJob\ConvertedScheduledJob.csproj", "{5AFA5352-DBBE-4C83-B322-713B6FA88190}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{3538E51A-080C-4B21-88F0-1F072CE50A80}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3538E51A-080C-4B21-88F0-1F072CE50A80}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3538E51A-080C-4B21-88F0-1F072CE50A80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AFA5352-DBBE-4C83-B322-713B6FA88190}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AFA5352-DBBE-4C83-B322-713B6FA88190}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AFA5352-DBBE-4C83-B322-713B6FA88190}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AFA5352-DBBE-4C83-B322-713B6FA88190}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
